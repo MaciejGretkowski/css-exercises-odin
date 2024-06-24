@@ -2,9 +2,14 @@
 
 body {
   height: 100vh;
+  min-height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
 }
 
 img {
@@ -16,11 +21,56 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 15px;
 }
 
 input {
-  border: 1px solid #ddd;
+  border: 1px solid #eee;
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+  margin-bottom: 10px;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.left-links, .right-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  
+}
+
+a:link {
+  text-decoration: none;
+  
+}
+
+a {
+  color: #444;
+}
+
+
+.footer {
+  display: flex;
+  background-color: #eee;
+  height: 50px;
 }
